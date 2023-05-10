@@ -1,0 +1,63 @@
+<h1>Edit Product</h1>
+<br/>
+<br/>
+
+
+<div class="a1">
+
+    <form [formGroup]="addproduct" novalidate class="form">
+
+
+
+
+        <label for="inputPassword" class="col-sm-2 col-form-label"><b>Name</b></label>
+        <div class="col-sm-9">
+            <input type="text" formControlName="Name" class="form-control" id="inputPassword">
+        </div>
+
+
+        <label for="inputPassword" class="col-sm-2 col-form-label"><b>Location</b></label>
+        <div class="col-sm-9">
+            <input type="text" formControlName="Location" class="form-control" id="inputPassword">
+        </div>
+
+
+        <label for="inputPassword" class="col-sm-2 col-form-label"><b>Date_of_establishment</b></label>
+        <div class="col-sm-9">
+            <input type="text" formControlName="Date_of_establishment" class="form-control" id="inputPassword">
+        </div>
+
+
+
+        <label for="inputPassword" class="col-sm-2 col-form-label"><b>Type</b></label>
+        <div class="col-sm-9">
+            <select class="form-select" aria-label="Default select example" formControlName="Type">
+                <option selected>--</option>
+                <option >Laptop</option>
+                <option >Switcher</option>
+                <option >Printer</option>
+                <option >monitor</option>
+              </select>
+        </div>
+
+
+        <label for="inputPassword" class="col-sm-2 col-form-label"><b>State</b></label>
+        <div class="col-sm-9">
+            <input type="text" formControlName="State" class="form-control" id="inputPassword">
+        </div>
+
+    </form>
+
+
+
+    <br/>
+    <br/>
+    <div class="d">
+        <div class="d-grid gap-2 col-9 mx-auto">
+            <button class="btn btn-primary" type="button" (click)="onSubmit()">Update product</button>
+        </div>
+    </div>
+
+
+
+</div>

@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    color: cadetblue;
+}
+
+.addbutton {
+    align-self: right;
+    align-items: right;
+    align-content: right;
+    position: relative;
+    align-items: right;
+    right: -1380px;
+}
